@@ -1,4 +1,18 @@
 # django_auth!
+Once this repository is cloned on your system using the terminal, enter it's directory using this:
+```
+cd django_auth
+```
+and run the following commands
+```
+python manage.py runserver
+```
+
+make sure to type in the url address in your browser:
+```
+http://127.0.0.1:8000/register/
+```
+
 This is a simple snippet of code that uses the built in django authentication to bring the register, login and logout services to the user.
 
 This is a simple video showing the features of this web app.
