@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="utf-8"/>
+        {% load static %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'authentication/style.css' %}">
+    </head>
+    <body>
+        <div class="center">
+            <h1>Welcome to the Dashboard {{ user.username }}!!</h1>
+            <p>Email: {{ user.email }}</p>
+            <br>
+            <form action="" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Logout" class="input">
+            </form>
+        </div>
+        
+    </body>
+</html>

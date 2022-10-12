@@ -1,0 +1,37 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(120deg, blue, purple);
+}
+
+.center{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(200, 199, 199, 0.258);
+    padding: 10%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.36);
+}
+
+.input{
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid white;
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    margin: 6px;
+}
+
+.error{
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    text-align: center;
+}
+

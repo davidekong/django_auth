@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8"/>
+        {% load static %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'authentication/style.css' %}">
+    </head>
+    <body>
+        <div class="center">
+            <h1>Register</h1>
+            <form action="" method="post">
+                {% csrf_token %}
+                <input type="text" id="username" name="username" class="input" placeholder="Username">
+                <br>
+                <input type="email" name="email" id="email" class="input" placeholder="E-mail">
+                <br>
+                <input type="password" name="password1" id="password1" class="input" placeholder="Password">
+                <br>
+                <input type="password" name="password2" id="password2" class="input" placeholder="Re-Enter Password">
+                <br>
+                <input type="submit" value="Register" class="input">
+                <a href="{% url 'logIn' %}">Already have an account?</a>
+            </form>
+            <p class="error">{{ error_message }}</p>
+        </div>
+    </body>
+</html>
